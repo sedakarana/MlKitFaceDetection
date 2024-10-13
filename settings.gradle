@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = "Face Detection"
+include ':app'
+//include ':unityLibrary'
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        /*flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }*/
+    }
+}
+
